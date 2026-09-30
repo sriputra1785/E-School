@@ -1,0 +1,4 @@
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+const SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
+const SUPABASE_ANON_KEY = 'YOUR-ANON-KEY'; // anon key ใช้ฝั่งหน้าเว็บได้ ต้องเปิด RLS
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
